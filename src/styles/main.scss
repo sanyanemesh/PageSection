@@ -2,3 +2,179 @@
 @import "fonts";
 @import "typography";
 
+body,
+h1 {
+  margin: 0;
+}
+
+.section {
+  max-width: 1300px;
+  padding-left: 15px;
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+  }
+
+  &__about {
+    background-color: #f6f6f6;
+    height: 5em;
+    width: auto;
+    box-sizing: border-box;
+    margin-left: 50px;
+
+    @media (max-width: $screen-lg) {
+      margin-left: 0;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: $screen-sm) {
+      display: unset;
+    }
+  }
+
+  &__image {
+    background: url(https://d1t169mlegnt4t.cloudfront.net/transformed/c3cbf8a47b/plantyourflag-assets/images/new-ship_735a59e3fc456763c9158d3da5f74609.jpg) no-repeat;
+    background-size: contain;
+
+    @media (min-width: $screen-lg-max) {
+      width: 800px;
+      height: 535px;
+      margin-top: -2em;
+    }
+    @media (max-width: $screen-lg-max) {
+      width: 700px;
+      height: 475px;
+      margin-top: -2em;
+    }
+    @media (max-width: 820px) {
+      margin-top: -0.2em;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 1em;
+      width: 300px;
+      height: 200px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin: 0 auto;
+      width: 90%;
+      height: 62vw;
+    }
+  }
+
+  &__info {
+    width: auto;
+    @media (max-width: $screen-sm) {
+      margin-top: 1em;
+    }
+  }
+
+  &__title {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 1.5em 0 0.5em -0.65em;
+    font-weight: 500;
+    line-height: 0.8em;
+    letter-spacing: -3px;
+    white-space: pre-line;
+
+    @media (min-width: $screen-lg-max) {
+      font-size: 5em;
+    }
+
+    @media (max-width: $screen-lg-max) {
+      font-size: 4em;
+    }
+
+    @media (max-width: 1100px) {
+      margin: 0.5em 0 0 -0.65em;
+    }
+
+    @media (max-width: $screen-md-max) {
+      font-size: 3em;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 2em;
+      margin: 0.5em 1em 0.1em;
+      text-align: center;
+      letter-spacing: 0;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: block;
+      margin: 0 auto;
+      white-space: unset;
+    }
+  }
+
+  &__wrapper {
+    margin-left: 5em;
+
+    @media (max-width: $screen-lg-max) {
+      margin-left: 1em;
+    }
+
+    @media (max-width: $screen-lg) {
+      margin: 10px;
+    }
+  }
+
+  &__paragraph {
+    font-family: "Open Sans Condensed", sans-serif;
+    white-space: pre-line;
+    color: $paragraph-color;
+
+    @media (max-width: 1100px) {
+      width: 300px;
+      white-space: unset;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 250px;
+      font-size: 0.8em;
+      margin: 0.5em 0;
+      text-align: center;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin: 2em auto;
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    background-color: $btn-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: black;
+      box-shadow: 0.5px 0.5px 2px 3px $paragraph-color;
+    }
+
+    @media (max-width: $screen-md-max) {
+      height: 40px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-left: 2em;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

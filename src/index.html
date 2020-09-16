@@ -3,10 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>PageSection</title>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-
+    <section class="section">
+      <div class="section__about"></div>
+    </section>
+    <section class="section section__container" data-aos="fade-up">
+      <div class="section__image" data-aos="fade-right"></div>
+      <div class="section__info" data-aos="fade-left">
+        <h1 class="section__title">THE NEW AGE
+          OF EXPLORATION</h1>
+        <div class="section__wrapper">
+          <p class="section__paragraph">The future of shipping will be silent and emmision free. Ms
+            Roald Amundsen is the first of two hybrid ships
+            Hurtigruten will add to its fleet over the next few years,
+            cutting emmisions by sailing with electrical propulsion.
+          </p>
+          <button class="section__button">
+            ABOUT THE SHIPS
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

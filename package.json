@@ -72,5 +72,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
