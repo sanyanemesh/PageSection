@@ -1,3 +1,3 @@
-# Base layout template with Gulp, SCSS and Stylelint
+# Responsive Page Section
 
-    - [DEMO LINK](https://sanyanemesh.github.io/PageSection/)
+- [DEMO LINK](https://sanyanemesh.github.io/PageSection/)
